@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Niconne', cursive;
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(193,26,43,1) 0%, rgba(221,221,221,1) 80%, rgba(255,255,255,1) 100%);
+}
+
+
+
+.right-img{
+    position: fixed;
+    top: 55%;
+    right: -2%;
+}
+
+.left-img {
+    position: fixed;
+    top: 55%;
+}
+
+.scissors{
+    display: none;
+    top: 45%;
+}
+
+.paper {
+    top: 45%;
+    display: none;
+}
+
+.scissors-display{
+    display:block;
+}
+
+.paper-display{
+    display:block;
+}
+
+
+
+.rock-animation{
+ animation-name: rocksAnimation;
+ animation-duration: 1s;
+ animation-iteration-count: 1;
+ animation-timing-function: ease;
+ animation-fill-mode: forwards;
+}
+
+@keyframes rocksAnimation {
+    0%{
+        top:55%;
+    }
+    25%{
+        top:60%;
+    }
+    50%{
+        top:55%
+    }
+    75%{
+        top:60%;
+    }
+    100%{
+        top:55%;
+    }
+}
+

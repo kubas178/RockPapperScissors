@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Rock, paper, scissors</h1>
+    <button onclick="startGame()" class="start-game">
+        Let's play!
+
+    </button>
+    <button class="game-button" onclick="setNewRocks()" id="rock">Rock</button>
+    <button class="game-button" onclick="setNewRocks()" id="paper">Paper</button>
+    <button class="game-button" onclick="setNewRocks()" id="scissors">Scissors</button>
+
+    <div id="enemy"></div>
+    <div id="result"></div>
+
+    <img class="right-img rock" src="./images/right-rock.png" alt="Value chosen by you - rock">
+    <img class="left-img rock" src="./images/left-rock.png" alt="Value chosen by computer - rock">
+    <img class="right-img scissors" src="./images/right-scissors.png" alt="Value chosen by you - scissors">
+    <img class="left-img scissors" src="./images/left-scissors.png" alt="Value chosen by computer - scissors">
+    <img class="right-img paper" src="./images/right-paper.png" alt="Value chosen by you - paper">
+    <img class="left-img paper" src="./images/left-paper.png" alt="Value chosen by computer - paper">
+
+    <script src="main.js"></script>
+</body>
+</html>
